@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<book>
+  <bookinfo>
+    <title>Reference Documentation</title>
+    <productname>OBJECTFANATICS Assertion Library</productname>
+    <releaseinfo><?eval ${project.version}?></releaseinfo>
+
+    <authorgroup>
+      <author>
+        <firstname>Makoto</firstname>
+        <surname>Sato</surname>
+      </author>
+      <author>
+        <firstname>Hirokatsu</firstname>
+        <surname>Endo</surname>
+      </author>
+    </authorgroup>
+
+    <copyright>
+      <year>2005-2009</year>
+      <holder>Makoto Sato</holder>
+    </copyright>
+    <copyright>
+      <year>2010</year>
+      <holder>ObjectFanatics Ltd.</holder>
+    </copyright>
+
+    <!--
+    なんでか日本語ばける、要調査
+    ここだとばけてないっぽい？スタイルシートチェックせねば
+    http://git.gnome.org/browse/gnome-applets/commit/?id=141d6c0f32eb049c08fe241905f51ef366798b33
+    -->
+    <legalnotice>
+      <para>
+        なんかあれば書こう
+      </para>
+    </legalnotice>
+  </bookinfo>
+
+  <chapter>
+    <title>Synopsis</title>
+    <para>
+      OBJECTFANATICS Assertion Library is an assertion library to assert parameter values and return values by constraint annotations.
+      The following values can be asserted by them.
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          Constructor parameter
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Method parameter
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Method return value
+        </para>
+      </listitem>
+    </itemizedlist>
+  </chapter>
+
+  <chapter>
+    <title>Constraint Annotations</title>
+    <para>
+      There are some kinds of constraint annotations.
+      Each annotation has its own rule and throws IllegalArgumentException (for parameter value) or IllegalStateException (for return value) when assertion is failed.
+    </para>
+    <variablelist>
+      <varlistentry>
+        <term>@NotNull</term>
+        <listitem>
+          <para>
+            throws an exception when its target value is null.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </chapter>
+</book>
