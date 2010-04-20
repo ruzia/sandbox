@@ -38,10 +38,12 @@
         </executions>
         <dependencies>
           <dependency>
-            <groupId>org.docbook</groupId>
-            <artifactId>docbook-xml</artifactId>
-            <version>4.4</version>
-            <scope>runtime</scope>
+              <groupId>net.sf.docbook</groupId>
+              <artifactId>docbook-xml</artifactId>
+              <version>5.0-all</version>
+              <classifier>resources</classifier>
+              <type>zip</type>
+              <scope>runtime</scope>
           </dependency>
         </dependencies>
 
@@ -80,28 +82,28 @@
               <name>IPAGothic</name>
               <style>normal</style>
               <weight>normal</weight>
-              <embedFile>${basedir}/src/fonts/ipag.otf</embedFile>
+              <embedFile>${basedir}/src/fonts/ipag.ttf</embedFile>
               <metricsFile>${basedir}/target/fonts/ipag-metrics.xml</metricsFile>
             </font>
             <font>
               <name>IPAPGothic</name>
               <style>normal</style>
               <weight>normal</weight>
-              <embedFile>${basedir}/src/fonts/ipagp.otf</embedFile>
+              <embedFile>${basedir}/src/fonts/ipagp.ttf</embedFile>
               <metricsFile>${basedir}/target/fonts/ipagp-metrics.xml</metricsFile>
             </font>
             <font>
               <name>IPAMincho</name>
               <style>normal</style>
               <weight>normal</weight>
-              <embedFile>${basedir}/src/fonts/ipam.otf</embedFile>
+              <embedFile>${basedir}/src/fonts/ipam.ttf</embedFile>
               <metricsFile>${basedir}/target/fonts/ipam-metrics.xml</metricsFile>
             </font>
             <font>
               <name>IPAPMincho</name>
               <style>normal</style>
               <weight>normal</weight>
-              <embedFile>${basedir}/src/fonts/ipamp.otf</embedFile>
+              <embedFile>${basedir}/src/fonts/ipamp.ttf</embedFile>
               <metricsFile>${basedir}/target/fonts/ipamp-metrics.xml</metricsFile>
             </font>
 
